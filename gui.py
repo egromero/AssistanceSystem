@@ -14,7 +14,7 @@ class Dashboard(QWidget):
 
 	def init_GUI(self):
 		# Creamos una etiqueta para status
-		#self.showFullScreen()
+		self.showFullScreen()
 		date = QDate.currentDate().toString('dd/MM')
 		self.label1 = QLabel('Asistencia: '+ date, self)
 		self.label1.move(50,50)
@@ -101,7 +101,7 @@ class PasswordWindow(QWidget):
 		self.init_GUI()
 
 	def init_GUI(self):
-		#self.showFullScreen()
+		self.showFullScreen()
 		# Creamos una etiqueta para status
 		self.label1 = QLabel('Pincode: ', self)
 		self.label1.move(50,50)
